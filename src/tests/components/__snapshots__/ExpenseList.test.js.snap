@@ -11,7 +11,7 @@ exports[`Should render ExpenseList with a p tag and no items. 1`] = `
 exports[`Should render ExpenseList with expenses 1`] = `
 <div>
   <ExpenseListItem
-    amount={100}
+    amount={195}
     createdAt={0}
     description="gum"
     id="1"

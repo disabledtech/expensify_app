@@ -4,7 +4,7 @@ export default [{
     id: '1',
     description: 'gum',
     note: '',
-    amount: 100,
+    amount: 195,
     createdAt: 0
 }, {
     id: '2',
