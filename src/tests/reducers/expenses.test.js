@@ -65,3 +65,12 @@ test('Should not change when invalid id given.', () => {
     const state = expensesReducer(testExpenses, action);
     expect(state).toEqual(testExpenses);
 });
+
+test('Should set expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses: [testExpenses[1]]
+    }
+    const state = expensesReducer(testExpenses, action);
+    expect(state).toEqual([testExpenses[1]])
+})
