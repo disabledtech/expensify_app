@@ -9,7 +9,7 @@ import configureStore from './store/configureStore';
 import { firebase } from './firebase/firebase';
 import { startSetExpenses } from './actions/expenses';
 import { login, logout } from './actions/auth';
-
+import LoadingPage from './components/LoadingPage';
 const store = configureStore();
 
 const jsx = (
@@ -19,6 +19,7 @@ const jsx = (
 );
 
 let hasRendered = false;
+
 const renderApp = () => {
     if (!hasRendered) {
         ReactDOM.render(jsx, document.getElementById('App'));
@@ -26,7 +27,8 @@ const renderApp = () => {
     }
 }
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('App'));
+
+ReactDOM.render(<LoadingPage />, document.getElementById('App'));
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {     
@@ -42,7 +44,7 @@ firebase.auth().onAuthStateChanged((user) => {
         renderApp();
         history.push('/');
     }
-})
+});
 
 
 
