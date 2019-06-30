@@ -1,6 +1,6 @@
 # Expensify
 
-Expensify is an app for tracking your expenses. [View live on the web](https://expensify-disabledtech.herokuapp.com/).
+Expensify is an app for tracking your expenses. [View live on the web](https://expensify-ff470.firebaseapp.com/).
 
 ## Features
 
