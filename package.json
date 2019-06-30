@@ -27,7 +27,7 @@
     "firebase": "4.2.0",
     "history": "4.7.2",
     "mini-css-extract-plugin": "^0.7.0",
-    "moment": "2.18.1",
+    "moment": ">=2.19.3",
     "node-sass": "^4.12.0",
     "normalize.css": "7.0.0",
     "numeral": "2.0.6",
@@ -56,6 +56,6 @@
     "enzyme-to-json": "3.0.1",
     "jest": "20.0.4",
     "react-test-renderer": "16.0.0",
-    "webpack-dev-server": "2.5.1"
+    "webpack-dev-server": ">=3.1.11"
   }
 }
